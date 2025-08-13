@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centered Lottie Animation (Flexbox)</title>
+  <style>
+    .lottie-container {
+      display: flex;
+      justify-content: center; /* Horizontally center */
+      align-items: center;    /* Vertically center */
+      height: 100vh; /* Make the container take the full viewport height */
+      gap: 24px; /* Space between animations */
+      flex-direction: column; /* Stack animations and button vertically */
+    }
+    
+    .register-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-top: 30px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .register-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lottie-container">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    <dotlottie-wc src="https://lottie.host/facd1c85-af45-4c45-a3d7-955d827c7985/FmF9KdtwbW.lottie" style="width: 300px; height: 300px" speed="1" autoplay loop></dotlottie-wc>
+    <a href="registration.html" class="register-btn">Register Now</a>
+  </div>
+
+</body>
+</html>
